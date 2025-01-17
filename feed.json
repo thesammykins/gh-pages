@@ -1,0 +1,28 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Sammykins",
+    "description": "",
+    "home_page_url": "https://blog.sammykins.au/gh-pages",
+    "feed_url": "https://blog.sammykins.au/gh-pages/feed.json",
+    "user_comment": "",
+    "icon": "https://blog.sammykins.au/gh-pages/media/website/26049947.png",
+    "author": {
+        "name": "Samantha"
+    },
+    "items": [
+        {
+            "id": "https://blog.sammykins.au/gh-pages/hello.html",
+            "url": "https://blog.sammykins.au/gh-pages/hello.html",
+            "title": "Hello.",
+            "summary": "Hello world. That's what they say right?",
+            "content_html": "<p>Hello world. That's what they say right?</p>",
+            "author": {
+                "name": "Samantha"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-01-17T10:51:56+10:30",
+            "date_modified": "2025-01-17T10:51:56+10:30"
+        }
+    ]
+}
