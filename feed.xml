@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>Sammykins</title>
-    <link href="https://blog.sammykins.au/gh-pages/feed.xml" rel="self" />
-    <link href="https://blog.sammykins.au/gh-pages" />
+    <link href="https://blog.sammykins.au/feed.xml" rel="self" />
+    <link href="https://blog.sammykins.au" />
     <updated>2025-01-17T10:51:56+10:30</updated>
     <author>
         <name>Samantha</name>
     </author>
-    <id>https://blog.sammykins.au/gh-pages</id>
+    <id>https://blog.sammykins.au</id>
 
     <entry>
         <title>Hello.</title>
         <author>
             <name>Samantha</name>
         </author>
-        <link href="https://blog.sammykins.au/gh-pages/hello.html"/>
-        <id>https://blog.sammykins.au/gh-pages/hello.html</id>
+        <link href="https://blog.sammykins.au/hello.html"/>
+        <id>https://blog.sammykins.au/hello.html</id>
 
         <updated>2025-01-17T10:51:56+10:30</updated>
             <summary>

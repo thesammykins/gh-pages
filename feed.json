@@ -2,17 +2,17 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Sammykins",
     "description": "",
-    "home_page_url": "https://blog.sammykins.au/gh-pages",
-    "feed_url": "https://blog.sammykins.au/gh-pages/feed.json",
+    "home_page_url": "https://blog.sammykins.au",
+    "feed_url": "https://blog.sammykins.au/feed.json",
     "user_comment": "",
-    "icon": "https://blog.sammykins.au/gh-pages/media/website/26049947.png",
+    "icon": "https://blog.sammykins.au/media/website/26049947.png",
     "author": {
         "name": "Samantha"
     },
     "items": [
         {
-            "id": "https://blog.sammykins.au/gh-pages/hello.html",
-            "url": "https://blog.sammykins.au/gh-pages/hello.html",
+            "id": "https://blog.sammykins.au/hello.html",
+            "url": "https://blog.sammykins.au/hello.html",
             "title": "Hello.",
             "summary": "Hello world. That's what they say right?",
             "content_html": "<p>Hello world. That's what they say right?</p>",
