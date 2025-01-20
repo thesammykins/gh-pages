@@ -1,12 +1,192 @@
-<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Error 404 - Sammykins</title><meta name="robots" content="noindex, follow"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="alternate" type="application/atom+xml" href="https://blog.sammykins.au/feed.xml"><link rel="alternate" type="application/json" href="https://blog.sammykins.au/feed.json"><meta property="og:title" content="Sammykins"><meta property="og:image" content="https://blog.sammykins.au/media/website/26049947.png"><meta property="og:image:width" content="87"><meta property="og:image:height" content="87"><meta property="og:site_name" content="Sammykins"><meta property="og:description" content=""><meta property="og:url" content="https://blog.sammykins.au/"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@thesammykins"><meta name="twitter:title" content="Sammykins"><meta name="twitter:description" content=""><meta name="twitter:image" content="https://blog.sammykins.au/media/website/26049947.png"><link rel="shortcut icon" href="https://blog.sammykins.au/media/website/26049947-2.png" type="image/png"><link rel="preload" href="https://blog.sammykins.au/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://blog.sammykins.au/assets/dynamic/fonts/jetbrainsmono/jetbrainsmono-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://blog.sammykins.au/assets/css/style.css?v=9487feb4daead709f229e956815aaf28"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"Sammykins","logo":"https://blog.sammykins.au/media/website/26049947.png","url":"https://blog.sammykins.au/"}</script><noscript><style>img[loading] {
-                    opacity: 1;
-                }</style></noscript></head><body class="error-template"><div class="container"><header class="header"><div class="header__logo"><a class="logo" href="https://blog.sammykins.au/"><img src="https://blog.sammykins.au/media/website/26049947.png" alt="Sammykins" width="87" height="87"></a></div><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="https://blog.sammykins.au/" target="_self">Hey.</a></li><li><a href="https://blog.sammykins.au/posts/" target="_self">Posts</a></li></ul></nav></header><main class="content page page--error"><div class="page__header"><h1 class="page__title page--error__title">404</h1><p class="h4">Page not found</p><p>The page you were looking for appears to have been moved, deleted or does not exist. You could go back to where you were or head straight to our home page.</p><a href="https://blog.sammykins.au/" class="read-more">&#8592; Go home</a></div></main><footer class="footer"><div class="footer__inner"><div class="footer__copyright"><p>A Github Pages site by thesammykins © 2025</p><p>Powered by Publii CMS :: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank" rel="noopener">Theme</a> ported by the <a href="https://getpublii.com/customization-service/" target="_blank" rel="noopener">Publii Team</a></p></div></div></footer></div><script defer="defer" src="https://blog.sammykins.au/assets/js/scripts.min.js?v=c2232aa7558e9517946129d2a1b8c770"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
-        for (var i = 0; i < images.length; i++) {
-            if (images[i].complete) {
-                images[i].classList.add('is-loaded');
-            } else {
-                images[i].addEventListener('load', function () {
-                    this.classList.add('is-loaded');
-                }, false);
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="utf-8">
+    <title>Error 404 - Terminal</title>
+    <style>
+        body {
+            background: #0a0a0a;
+            color: #00ff00;
+            font-family: 'JetBrains Mono', monospace;
+            margin: 0;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            z-index: 1;
+            position: relative;
+        }
+
+        .crt {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #0a0a0a;
+            pointer-events: none;
+        }
+
+        .crt::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                rgba(18, 16, 16, 0) 50%,
+                rgba(0, 0, 0, 0.25) 50%
+            );
+            background-size: 100% 4px;
+            animation: scanline 10s linear infinite;
+            pointer-events: none;
+        }
+
+        .crt::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(18, 16, 16, 0.1);
+            opacity: 0;
+            pointer-events: none;
+            animation: flicker 0.15s infinite;
+        }
+
+        .bouncing-favicon {
+            position: fixed;
+            z-index: 5;
+            width: 128px;
+            height: 128px;
+            top: 0;
+            left: 0;
+            will-change: transform;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            cursor: pointer;
+        }
+
+        @keyframes scanline {
+            0% {
+                transform: translateY(0);
+                background-position: 0 0;
             }
-        }</script></body></html>
+            100% {
+                transform: translateY(100vh);
+                background-position: 0 100vh;
+            }
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.27861; }
+            5% { opacity: 0.34769; }
+            10% { opacity: 0.23604; }
+            15% { opacity: 0.90626; }
+            20% { opacity: 0.18128; }
+            25% { opacity: 0.83891; }
+            30% { opacity: 0.65583; }
+            35% { opacity: 0.67807; }
+            40% { opacity: 0.26559; }
+            45% { opacity: 0.84693; }
+            50% { opacity: 0.96019; }
+            55% { opacity: 0.08594; }
+            60% { opacity: 0.20313; }
+            65% { opacity: 0.71988; }
+            70% { opacity: 0.53455; }
+            75% { opacity: 0.37288; }
+            80% { opacity: 0.71428; }
+            85% { opacity: 0.70419; }
+            90% { opacity: 0.7003; }
+            95% { opacity: 0.36108; }
+            100% { opacity: 0.24387; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404 - Page Not Found</h1>
+        <p>The page you're looking for doesn't exist.</p>
+    </div>
+    <div class="crt"></div>
+    <img src="https://blog.sammykins.au/media/website/26049947-2.png" class="bouncing-favicon" id="bouncingFavicon" alt="Bouncing Favicon">
+
+    <script>
+        class DVDAnimation {
+            constructor(element) {
+                this.element = element;
+                this.position = {
+                    x: Math.random() * (window.innerWidth - element.offsetWidth),
+                    y: Math.random() * (window.innerHeight - element.offsetHeight)
+                };
+                this.speed = 1.5; // Slower speed
+                this.direction = {
+                    x: Math.random() > 0.5 ? this.speed : -this.speed,
+                    y: Math.random() > 0.5 ? this.speed : -this.speed
+                };
+                this.bounds = {
+                    width: window.innerWidth - element.offsetWidth,
+                    height: window.innerHeight - element.offsetHeight
+                };
+                this.colors = [
+                    'hue-rotate(0deg)',
+                    'hue-rotate(60deg)',
+                    'hue-rotate(120deg)',
+                    'hue-rotate(180deg)',
+                    'hue-rotate(240deg)',
+                    'hue-rotate(300deg)'
+                ];
+                this.currentColor = 0;
+                
+                window.addEventListener('resize', () => this.updateBounds());
+                // Redirect on click only
+                this.element.addEventListener('click', () => window.location.href = '/');
+                this.animate();
+            }
+
+            updateBounds() {
+                this.bounds.width = window.innerWidth - this.element.offsetWidth;
+                this.bounds.height = window.innerHeight - this.element.offsetHeight;
+                this.position.x = Math.min(Math.max(0, this.position.x), this.bounds.width);
+                this.position.y = Math.min(Math.max(0, this.position.y), this.bounds.height);
+            }
+
+            changeColor() {
+                this.currentColor = (this.currentColor + 1) % this.colors.length;
+                this.element.style.filter = this.colors[this.currentColor];
+            }
+
+            animate() {
+                this.position.x += this.direction.x;
+                this.position.y += this.direction.y;
+
+                // Check bounds & bounce
+                if (this.position.x <= 0 || this.position.x >= this.bounds.width) {
+                    this.direction.x *= -1;
+                    this.position.x = Math.max(0, Math.min(this.position.x, this.bounds.width));
+                    this.changeColor();
+                }
+                if (this.position.y <= 0 || this.position.y >= this.bounds.height) {
+                    this.direction.y *= -1;
+                    this.position.y = Math.max(0, Math.min(this.position.y, this.bounds.height));
+                    this.changeColor();
+                }
+
+                this.element.style.transform = `translate(${this.position.x}px, ${this.position.y}px)`;
+                requestAnimationFrame(() => this.animate());
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new DVDAnimation(document.getElementById('bouncingFavicon'));
+        });
+    </script>
+</body>
+</html>
