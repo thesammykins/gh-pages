@@ -12,10 +12,44 @@
 				window.addEventListener('load', function () {
 					let iframe = document.querySelector("#cusdis_thread iframe");
 					if (iframe) {
+						// Inject theme CSS variables into iframe
+						const injectStyles = () => {
+							try {
+								const styles = `
+									:root {
+										--background: ${getComputedStyle(document.documentElement).getPropertyValue('--background')};
+										--color: ${getComputedStyle(document.documentElement).getPropertyValue('--color')};
+										--accent: ${getComputedStyle(document.documentElement).getPropertyValue('--accent')};
+									}
+									body {
+										background: hsla(var(--background), var(--alpha,1)) !important;
+										color: hsla(var(--color), var(--alpha,1)) !important;
+									}
+									input, textarea, button {
+										background: hsla(var(--background), var(--alpha,1)) !important;
+										color: hsla(var(--color), var(--alpha,1)) !important;
+										border-color: hsla(var(--accent), var(--alpha,.3)) !important;
+									}
+									a {
+										color: hsla(var(--accent), var(--alpha,1)) !important;
+									}
+								`;
+								const styleSheet = iframe.contentWindow.document.createElement('style');
+								styleSheet.textContent = styles;
+								iframe.contentWindow.document.head.appendChild(styleSheet);
+							} catch(e) {
+								console.log('Could not inject Cusdis styles:', e);
+							}
+						};
+
+						// Handle iframe height
 						let observer = new MutationObserver(() => {
 							let scrollHeight = iframe.contentWindow.document.body.scrollHeight;
 							iframe.style.height = scrollHeight + "px";
+							injectStyles();
 						});
+						
+						iframe.addEventListener('load', injectStyles);
 						observer.observe(iframe.contentWindow.document.body, { childList: true, subtree: true });
 					}
 				});
