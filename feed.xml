@@ -3,12 +3,64 @@
     <title>Sammykins</title>
     <link href="https://blog.sammykins.au/feed.xml" rel="self" />
     <link href="https://blog.sammykins.au" />
-    <updated>2025-01-27T13:51:14+11:00</updated>
+    <updated>2025-08-29T10:10:42+10:00</updated>
     <author>
         <name>Samantha</name>
     </author>
     <id>https://blog.sammykins.au</id>
 
+    <entry>
+        <title>AI isn&#x27;t fun.</title>
+        <author>
+            <name>Samantha</name>
+        </author>
+        <link href="https://blog.sammykins.au/posts/ai-isnt-fun/"/>
+        <id>https://blog.sammykins.au/posts/ai-isnt-fun/</id>
+        <media:content url="https://blog.sammykins.au/media/posts/6/ai_isnt_fun.png" medium="image" />
+            <category term="technology"/>
+            <category term="opinion"/>
+            <category term="meta"/>
+            <category term="ai"/>
+
+        <updated>2025-08-29T10:06:48+10:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://blog.sammykins.au/media/posts/6/ai_isnt_fun.png" alt="" />
+                    <p>AI isn’t fun.. it’s pure excitement, <strong>an addiction machine</strong>. Honestly, it’s no different from any drug in the way it hooks you. And let’s be real: nobody likes having their own addictions shoved in their face. Maybe that sounds dramatic, but comparing AI users to hard drug addicts isn’t as far-fetched as it seems. I’m not into drugs, but if this is what a good high feels like, then yeah.. <strong>I’m hooked</strong>.</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://blog.sammykins.au/media/posts/6/ai_isnt_fun.png" class="type:primaryImage" alt="" /></p>
+                <p>AI isn’t fun.. it’s pure excitement, <strong>an addiction machine</strong>. Honestly, it’s no different from any drug in the way it hooks you. And let’s be real: nobody likes having their own addictions shoved in their face. Maybe that sounds dramatic, but comparing AI users to hard drug addicts isn’t as far-fetched as it seems. I’m not into drugs, but if this is what a good high feels like, then yeah.. <strong>I’m hooked</strong>.</p>
+
+<p>What I’ve been seeing is a <em>general distaste</em> of usage of machine learning outside of solving problems that those who seem to distaste it feel that the technology is useful for, while some others fear it for theft of their livelihood. The irony is everyone should fear a future in which our governments are not prepared for events such as the advent of AI and more advanced machine learning opportunities for humanity.</p>
+<p>I work in a tech organisation, they build a modern banking app for consumers. I’m just a technical support engineer (fancy title for IT support person) who has begun to really dive into the future put in front of my cerebral cortex. It’s put me in a strange position where I am both eager to jump in and see how this new technology can benefit the organisation but at the same time fighting with those who fundamentally know how to build amazing software without it’s assistance.</p>
+<p>The two camps are very much obvious, those who see this as a hindrance to their ability to do their day to day work and those who are exploring how it can be a useful pairing tool and partner in the work they do daily. I firmly believe those using it as a pairing tool are already years ahead of those who are actively ignoring that no matter what they do in the next two-three years, it will be a requirement for them to understand how to implement this technology into their workflow.</p>
+<p>I’ve thrown together a couple of useful tools for myself to both explore how best to use AI tools, which ones are most useful and not just producing slop, along with the ones which frankly are just there to one day have enough memory of my life to slip into the personal assistant (looking at you ChatGPT).</p>
+<figure class="post__image"><img loading="lazy"  src="https://blog.sammykins.au/media/posts/6/CleanShot-ChatGPT-29_08_2025-2.png" alt="" width="1509" height="1058" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://blog.sammykins.au/media/posts/6/responsive/CleanShot-ChatGPT-29_08_2025-2-xs.png 300w ,https://blog.sammykins.au/media/posts/6/responsive/CleanShot-ChatGPT-29_08_2025-2-sm.png 480w ,https://blog.sammykins.au/media/posts/6/responsive/CleanShot-ChatGPT-29_08_2025-2-md.png 768w ,https://blog.sammykins.au/media/posts/6/responsive/CleanShot-ChatGPT-29_08_2025-2-lg.png 1024w"></figure>
+<blockquote>
+<p>I probably burnt down a bush to send this right?</p>
+</blockquote>
+<p>The most useful tool in the arsenal of people in roles like mine is the trusty terminal, that entirely text based magical window into the entire backend of every operating system ever made. I switched to a terminal called Warp at some stage in the last couple of years because of its ability to store workflows that I used often or cobbled together from hours on Stack Overflow or Reddit before the advent of AI, guess what? They added AI capabilities and my productivity with a terminal increased exponentially, I was no longer a glorified Google agent but a useful engineer.</p>
+<figure class="post__image"><img loading="lazy"  src="https://blog.sammykins.au/media/posts/6/CleanShot-CleanShot-29_08_20252x-2.png" alt="" width="3480" height="2348" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://blog.sammykins.au/media/posts/6/responsive/CleanShot-CleanShot-29_08_20252x-2-xs.png 300w ,https://blog.sammykins.au/media/posts/6/responsive/CleanShot-CleanShot-29_08_20252x-2-sm.png 480w ,https://blog.sammykins.au/media/posts/6/responsive/CleanShot-CleanShot-29_08_20252x-2-md.png 768w ,https://blog.sammykins.au/media/posts/6/responsive/CleanShot-CleanShot-29_08_20252x-2-lg.png 1024w"></figure>
+<blockquote>
+<p><a href="https://app.warp.dev/referral/MP4K6Y" target="_blank" rel="nofollow noopener noreferrer">Warp</a> is literally, a vibe.</p>
+</blockquote>
+<p>That’s the thing right? You can take someone who has enough understanding of a topic, skill or career pathway that in 2025 they can just get a head start. We’re seeing a subtle shift, which fundamentally is changing the way that I see my role, then as an extension of that organisations are starting to rethink theirs. We see organisations going through the ebb and flow of hiring and laying off people to replace them with AI instead of really thinking about the people in those roles who will need to start building agents to make their jobs obsolete, nobody WANTS to work, we do it for capitalistic purposes to ensure we have a roof, warmth and food on the table. Take that away and what incentive do we have to achieve anything?</p>
+<figure class="post__image"><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://blog.sammykins.au/media/posts/6/CleanShot-CleanShot-29_08_20252x.png" alt="Zed is another tool I've found amazing for my arsenal of drugs." width="874" height="559" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://blog.sammykins.au/media/posts/6/responsive/CleanShot-CleanShot-29_08_20252x-xs.png 300w ,https://blog.sammykins.au/media/posts/6/responsive/CleanShot-CleanShot-29_08_20252x-sm.png 480w ,https://blog.sammykins.au/media/posts/6/responsive/CleanShot-CleanShot-29_08_20252x-md.png 768w ,https://blog.sammykins.au/media/posts/6/responsive/CleanShot-CleanShot-29_08_20252x-lg.png 1024w"></figure>
+<blockquote>
+<p><a href="https://zed.dev/" target="_blank" rel="nofollow noopener noreferrer">Zed</a> is just another drug I've begun to use in my day-to-day life as a vibe coder.</p>
+</blockquote>
+<p>This was all a long way to say, learn how to prompt engineer the shit out of everything you do. Start thinking in instructions and planning out the next move before you make it. The most powerful thinking tool we have is not GPT-5 High Reasoning but your brain and its endless creativity, you are the AGI who can bend these tools to your will in whatever form that takes.</p>
+<p>Start exploring, start playing with what you can afford to use, automate your life, your job and the future. Don’t treat it as a tool to gain or learn knowledge (why would you trust a thing that hallucinates 100% of the time?) but as a tool to make your life easier so you can kick back with a margarita (or whatever else you want) and watch productivity skyrocket without ever needing to touch a keyboard again.</p>
+<p>For those in trades or more hands on jobs? Start thinking about ways these tools can just be another thing on the belt, your careers are safe for longer than most. No matter what you’ll be the foundation of our society for decades to come, until they start shoving humanoid robots next to you as apprentices. So where does that leave us today? All that hype, anxiety and experimentation by people who never used to build apps or technology.</p>
+<p>Here’s my take: AI is amazing, useless, scary and a waste of energy. It’s what you make it, so stop ignoring the fact that people are fundamentally changing how they achieve their ambitions and you’re the one that is going to be left behind.</p>
+<p><!-- notionvc: 29289203-22a2-4c37-a9b9-356bccf48b71 --></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Review: Meta Ray Bans Headliner</title>
         <author>
