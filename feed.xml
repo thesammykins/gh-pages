@@ -3,12 +3,79 @@
     <title>Sammykins</title>
     <link href="https://blog.sammykins.au/feed.xml" rel="self" />
     <link href="https://blog.sammykins.au" />
-    <updated>2025-08-29T10:10:42+10:00</updated>
+    <updated>2025-10-08T09:35:45+11:00</updated>
     <author>
         <name>Samantha</name>
     </author>
     <id>https://blog.sammykins.au</id>
 
+    <entry>
+        <title>Your business wasn’t ready for 2024.</title>
+        <author>
+            <name>Samantha</name>
+        </author>
+        <link href="https://blog.sammykins.au/posts/your-business-wasnt-ready-for-2024/"/>
+        <id>https://blog.sammykins.au/posts/your-business-wasnt-ready-for-2024/</id>
+        <media:content url="https://blog.sammykins.au/media/posts/7/348CB180-2616-4399-8E9D-79B97715F757.png" medium="image" />
+            <category term="technology"/>
+            <category term="ramblings"/>
+            <category term="ai"/>
+
+        <updated>2025-10-08T09:26:54+11:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://blog.sammykins.au/media/posts/7/348CB180-2616-4399-8E9D-79B97715F757.png" alt="A person on a beach in Hawaii enjoying AI doing their job." />
+                    tl;dr: use AI every day and figure out how to make it work for you. Become a 10x individual at home so when business finally&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://blog.sammykins.au/media/posts/7/348CB180-2616-4399-8E9D-79B97715F757.png" class="type:primaryImage" alt="A person on a beach in Hawaii enjoying AI doing their job." /></p>
+                <blockquote>
+<p>tl;dr: use AI every day and figure out how to make it work for you. Become a 10x individual at home so when business finally catches up, you’re a 10x worker on a beach in Hawaii while a cloud agent you prompted six months ago handles the boring stuff.</p>
+</blockquote>
+<p>Nobody was prepared for the first wave of AI tools. Early ChatGPT felt like it was just spewing words, even with a mountain of training data behind it.</p>
+<h1>Where are we now</h1>
+<p>My last post said “AI isn’t fun.” Still true. What I’ve realised this week is a lot of big organisations, especially regulated ones without an army of lawyers on call, are 12 to 18 months behind. Not ready for 2024. And still dragging their feet on the groundwork to discover frontline use cases.</p>
+<p>Frontline workers are the point. I’m on an IT helpdesk. All day is triage, calls, tickets, quick decisions. These are the people who keep the business moving, cut wasted time, and should be leading their own team of robots in the cloud through prompt engineering.</p>
+<blockquote>
+<p>Picture this: it’s 9am, 10 new tickets land. An agent reads the end user text, checks internal knowledge and web search, drafts first responses, and routes by policy. First pass triage in 1 to 2 minutes, initial contact made. Will it be perfect? No. Is the trade off worth it? Yes.</p>
+</blockquote>
+<h3><figure class="post__image align-center"><img loading="lazy"  style="color: #a5a7b7; font-family: sans-serif; font-size: inherit; font-weight: 400;" src="https://blog.sammykins.au/media/posts/7/322856D9-3C16-42B0-9D4A-4A9DD4AA6821.png" alt="" width="710" height="473" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://blog.sammykins.au/media/posts/7/responsive/322856D9-3C16-42B0-9D4A-4A9DD4AA6821-xs.png 300w ,https://blog.sammykins.au/media/posts/7/responsive/322856D9-3C16-42B0-9D4A-4A9DD4AA6821-sm.png 480w ,https://blog.sammykins.au/media/posts/7/responsive/322856D9-3C16-42B0-9D4A-4A9DD4AA6821-md.png 768w ,https://blog.sammykins.au/media/posts/7/responsive/322856D9-3C16-42B0-9D4A-4A9DD4AA6821-lg.png 1024w"></figure></h3>
+<h1>The adoption cycle</h1>
+<p>We’re at the tail end of 2025 and most daily AI tools like ChatGPT and Gemini are treated like second class citizens at work because “they aren’t real tools.” That misses the point. The same people already using them could be twice as productive with the enterprise versions in their toolkit.</p>
+<p>I’m lucky to have GitHub Copilot for Business through work. It has taught me a lot about the limits and the wins. Since early 2024 the hype was loud. By late 2025 has much changed? Are we deploying agents in cloud environments to do daily tasks? Are we using approved tools? I doubt it, if anything the fear of deploying anything these tools build into production is still a concern to most.</p>
+<blockquote>
+<p>I’m probably top three Copilot users in my org. I use it to generate bash scripts, smash out one off fixes, and save a stack of time. Pour one out for StackOverflow. Outside work I’m seeing how far “vibe coding” goes before I bail and apply the lessons to the next project. My niche seems to be building MCP servers. Model Context Protocol servers are small services that standardise how tools and context plug into AI agents so workflows aren’t just vibes, they’re repeatable.</p>
+</blockquote>
+<figure class="post__image"><img loading="lazy"  src="https://blog.sammykins.au/media/posts/7/720D8497-5B16-4C25-97F3-F2C2CB28C0AA.png" alt="" width="1200" height="800" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://blog.sammykins.au/media/posts/7/responsive/720D8497-5B16-4C25-97F3-F2C2CB28C0AA-xs.png 300w ,https://blog.sammykins.au/media/posts/7/responsive/720D8497-5B16-4C25-97F3-F2C2CB28C0AA-sm.png 480w ,https://blog.sammykins.au/media/posts/7/responsive/720D8497-5B16-4C25-97F3-F2C2CB28C0AA-md.png 768w ,https://blog.sammykins.au/media/posts/7/responsive/720D8497-5B16-4C25-97F3-F2C2CB28C0AA-lg.png 1024w"></figure>
+<h1>Here’s the meat.</h1>
+<p>Many orgs are stuck in a pre 2024 mindset because they can’t get past the risk conversation.</p>
+<p>Who sets guardrails? Are the right people picking the right tools? Why one AI service for everyone? How many steak dinners did vendors promise?</p>
+<p><strong>Key issues that stand out:</strong></p>
+<ul>
+<li>Data leakage without DLP. Internal docs and PII slip into prompts. Fix it with scoped connectors, redaction, and audit trails.</li>
+<li>Governance fears about training on customer data. Make contractual commitments clear and disable training by default.</li>
+<li>Procurement lock in. Pilot with multiple vendors, evaluate at the task level, avoid monoculture.</li>
+</ul>
+<p>The simple answer: Legal sets policy boundaries. Security enforces controls. IT operationalises access. The business unit defines success criteria and owns the pilot. Run multi vendor, measure outcomes, scale what works.</p>
+<figure class="post__image"><img loading="lazy"  src="https://blog.sammykins.au/media/posts/7/CF524000-733F-45B9-9549-7833A2B3565E.png" alt="" width="1200" height="800" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://blog.sammykins.au/media/posts/7/responsive/CF524000-733F-45B9-9549-7833A2B3565E-xs.png 300w ,https://blog.sammykins.au/media/posts/7/responsive/CF524000-733F-45B9-9549-7833A2B3565E-sm.png 480w ,https://blog.sammykins.au/media/posts/7/responsive/CF524000-733F-45B9-9549-7833A2B3565E-md.png 768w ,https://blog.sammykins.au/media/posts/7/responsive/CF524000-733F-45B9-9549-7833A2B3565E-lg.png 1024w"></figure>
+<h3>Wrapping it all up</h3>
+<p>Keep it short because this is a ramble. Start using ChatGPT, Gemini, or try Claude. Sign up for a month of <a href="http://t3.chat" target="_blank" rel="noopener noreferrer">t3.chat</a> to play with basically every model. Use these tools like you would at work, but for your personal life. Prepare now so when your org finally starts taking this seriously, probably around 2030, people get off their high horse and learn how to use it properly instead of being ignorant.</p>
+<blockquote>
+<p>Try this this week. Make sure web search or deep research is enabled.</p>
+<p>Collect 3 to 5 quotes for a big home purchase, like a solar install, kitchen remodel, or fence replacement. Ask your AI to normalise line items, hardware, labour, warranties, permits, surface exclusions, summarise payment terms, and build a simple scorecard. Track time saved and whether the comparison changes your choice after five days.</p>
+<p>Starter prompt: “You are my household procurement analyst. Normalise these vendor quotes into one comparable table: line items, unit counts, unit price, total, warranty coverage, years, parts and labour, performance guarantees, payment terms, deposit percentage and milestones, schedule, exclusions, and change order triggers. Then:</p>
+<p>Flag governance risks, ambiguous warranties, penalty clauses, arbitration, hidden fees.</p>
+<p>Create a weighted scorecard: price 30 percent, warranty 25 percent, installation quality 20 percent, schedule 15 percent, contract clarity 10 percent. Briefly justify each score.</p>
+<p>Draft five follow up questions per vendor to reduce risk and confirm scope.</p>
+<p>If information is missing, mark it ‘unknown’ and suggest how to obtain it.”</p>
+</blockquote>
+<p>The bubble isn’t a bubble. You’re being told it is because the decision makers are most impacted by cloud robots doing what they currently do with less inherent bias and vastly better context and compute (if we’re considering the human brain and memory as-such).</p>
+<p><!-- notionvc: e77bf03f-7e41-4211-8e71-c015777f6037 --></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>AI isn&#x27;t fun.</title>
         <author>
