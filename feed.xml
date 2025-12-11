@@ -3,12 +3,71 @@
     <title>Sammykins</title>
     <link href="https://blog.sammykins.au/feed.xml" rel="self" />
     <link href="https://blog.sammykins.au" />
-    <updated>2025-10-08T09:35:45+11:00</updated>
+    <updated>2025-12-11T17:09:44+11:00</updated>
     <author>
         <name>Samantha</name>
     </author>
     <id>https://blog.sammykins.au</id>
 
+    <entry>
+        <title>Is it Cheating if it Applies?</title>
+        <author>
+            <name>Samantha</name>
+        </author>
+        <link href="https://blog.sammykins.au/posts/is-it-cheating-if-it-applies/"/>
+        <id>https://blog.sammykins.au/posts/is-it-cheating-if-it-applies/</id>
+        <media:content url="https://blog.sammykins.au/media/posts/8/Gemini_Generated_Image_qa5k1bqa5k1bqa5k.png" medium="image" />
+            <category term="technology"/>
+            <category term="ramblings"/>
+            <category term="opinion"/>
+            <category term="ai"/>
+
+        <updated>2025-12-11T16:35:24+11:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://blog.sammykins.au/media/posts/8/Gemini_Generated_Image_qa5k1bqa5k1bqa5k.png" alt="People staring at a person using AI for their job" />
+                    <h1>Some context to get you started.</h1>
+<p>If you’ve read my recent posts, you know I’ve been down a rabbit hole trying to apply more engineering-focused skills to my daily work. Over time I’ve been spending quite a bit of time going all-in on understanding how the current LLM models are generating code and how effective they can be at building things I might want to use day-to-day.</p>
+<p>My current work environment doesn't naturally reward pushing AI workloads into daily workflows. The ecosystem isn't there yet, and as I’m not a 'real' engineer, it's not my general realm to dabble in. </p>
+<p>So what have I started? Well, I used an LLM to generate a Terraform migration script and some test policies to migrate part of our existing <a href="https://www.jamf.com/products/jamf-pro/" target="_blank" rel="nofollow noopener noreferrer">Jamf Pro</a> environment, using the <a href="https://github.com/deploymenttheory/terraform-provider-jamfpro" target="_blank" rel="nofollow noopener noreferrer">available provider</a>, turns out they’re already pretty good at this.</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://blog.sammykins.au/media/posts/8/Gemini_Generated_Image_qa5k1bqa5k1bqa5k.png" class="type:primaryImage" alt="People staring at a person using AI for their job" /></p>
+                <h1>Some context to get you started.</h1>
+<p>If you’ve read my recent posts, you know I’ve been down a rabbit hole trying to apply more engineering-focused skills to my daily work. Over time I’ve been spending quite a bit of time going all-in on understanding how the current LLM models are generating code and how effective they can be at building things I might want to use day-to-day.</p>
+<p>My current work environment doesn't naturally reward pushing AI workloads into daily workflows. The ecosystem isn't there yet, and as I’m not a 'real' engineer, it's not my general realm to dabble in. </p>
+<p>So what have I started? Well, I used an LLM to generate a Terraform migration script and some test policies to migrate part of our existing <a href="https://www.jamf.com/products/jamf-pro/" target="_blank" rel="nofollow noopener noreferrer">Jamf Pro</a> environment, using the <a href="https://github.com/deploymenttheory/terraform-provider-jamfpro" target="_blank" rel="nofollow noopener noreferrer">available provider</a>, turns out they’re already pretty good at this.</p>
+
+<h1>Why is it cheating?</h1>
+<p>I face an infinite dilemma, especially since the advent of LLMs writing code: <strong>Is there value in learning to write code myself?</strong> Or should I focus on learning <em>how</em> to spot good code, prompt the agent for accuracy, and avoid spending 12–18 months burning out my brain trying to write it manually?</p>
+<p>It creates a debate around non-engineers making commits and raising PRs on production code. That’s a whole topic unto itself.</p>
+<p>In my case, I’m starting <strong>from scratch</strong> with entirely LLM-written Terraform. I prompt it with module documentation and examples, challenging it to comply with my concepts or tell me if what I’m asking is impossible by design. I'm self-learning how to properly put together a pull request and have better commit hygiene along the way too!</p>
+<p>What I was able to cobble together in an hour could’ve done the job <em>fine</em>, what I threw together with some further tuning in the following hour would’ve probably been perfect. Spending the extra time to learn more about Terraform and how to <strong>properly</strong> utilise it for the specific purpose I feel made the extra few days spent making sure everything was flawless worked in my favour.</p>
+<p>Do I know how well a human being with actual software engineering experience could’ve done the same job? Not at all, it could’ve been 30 minutes of typing for them, but I know I learned something through the journey at least.</p>
+<h1>Is the code good, though?</h1>
+<p>This is the part I’m stuck on, the script it has written for pulling down existing items from the staging environment works flawlessly. A validate and plan command pass with success and show that it will be updating, destroying or creating new policies based on what the export script has pulled down.</p>
+<p>Passing <code>validate</code> and <code>plan</code> is necessary, not sufficient. I still need a targeted apply in staging to prove behaviour. Do we actually need to deploy one of these items to staging to actually <strong>confirm</strong> that the LLM did the right thing?</p>
+<p><strong>Yes it does,</strong> that’s the whole point of doing a <code>plan</code> before an <code>apply</code> , generally speaking.</p>
+<p>I argue that based on what I’ve seen from other examples of codebases doing the same process that I’m doing, My LLM friend and I have done a far better job of making the Terraform config more extendible and less monolithic which in future is going to arguably make work less effort.</p>
+<p>Not to mention that it has done an excellent job of documenting for future LLM agents to build more and have non-engineers contribute to the Terraform codebase.</p>
+<h1>The stigma sucks. (Or is it imposter syndrome?)</h1>
+<p>We’re in this turning point for LLM use when it comes to software engineering and perhaps I’m not the right voice for this because I’ve come in blind, with only what I’ve learned personally by trying and failing on probably a hundred different ‘projects’ built with an LLM. I know a lot of larger organisations are going all-in on ensuring engineers use LLMs on a daily basis in their workflows and I’m sure a great many of them are producing far superior code than I ever will, but why is what I’m doing feeling like such a bad smell?</p>
+<p>I’m constantly going to force someone to peer review everything I write, there’s the kicker. I can be confident when validation and guardrails exist. But the moment those are gone, can we actually trust the code I spent a few days generating versus the months it would take to write manually?</p>
+<p>I don’t think I know the right or wrong answer to this, but what I can say is that with time and better models that have even more context and memory capacity, people like me can start actually contributing to environments we never thought were possible before.</p>
+<h1>Where from here?</h1>
+<p>I’m pondering this heavily. Personally, the journey is never over. I’ll be spending my end-of-year break and January 2025 exploring how to make these tools work even better for me.</p>
+<p>Professionally, though? I think the road is tapped out for now. There’s still too much stigma around using LLMs to do the work of an ‘actual engineer.’</p>
+<p>Regulated industries are not environments where minds like mine, who want to ship ideas in a couple of hours with LLM tooling or agentic workflows, can thrive at the moment, I feel too far ahead-of-the-game.</p>
+<p><strong>It just doesn’t work like that.</strong></p>
+<p>I’m personally taking a step back from using LLMs to deliver success in my current role unless it cuts weeks into hours. I want to apply what I know to the world, but the cost is accepting that my current environment is not the one to deliver it into. At the end of the day, <a href="https://blog.sammykins.au/posts/ai-isnt-fun/" target="_blank" rel="noopener noreferrer">AI isn’t fun</a>.</p>
+<p>Curious to hear or see what others have been doing in this space and if they’ve applied some form of agent logic into these type of workflows yet!</p>
+<p><!-- notionvc: 5168cf7e-5f21-4ebe-977e-a211ab0fc7af --></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Your business wasn’t ready for 2024.</title>
         <author>
@@ -22,7 +81,7 @@
             <category term="ai"/>
 
         <updated>2025-10-08T09:26:54+11:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://blog.sammykins.au/media/posts/7/348CB180-2616-4399-8E9D-79B97715F757.png" alt="A person on a beach in Hawaii enjoying AI doing their job." />
                     tl;dr: use AI every day and figure out how to make it work for you. Become a 10x individual at home so when business finally&hellip;
@@ -90,7 +149,7 @@
             <category term="ai"/>
 
         <updated>2025-08-29T10:06:48+10:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://blog.sammykins.au/media/posts/6/ai_isnt_fun.png" alt="" />
                     <p>AI isn’t fun.. it’s pure excitement, <strong>an addiction machine</strong>. Honestly, it’s no different from any drug in the way it hooks you. And let’s be real: nobody likes having their own addictions shoved in their face. Maybe that sounds dramatic, but comparing AI users to hard drug addicts isn’t as far-fetched as it seems. I’m not into drugs, but if this is what a good high feels like, then yeah.. <strong>I’m hooked</strong>.</p>
@@ -142,7 +201,7 @@
             <category term="impression"/>
 
         <updated>2025-01-20T20:59:46+11:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://blog.sammykins.au/media/posts/4/IMG_0928.jpeg" alt="" />
                     <h1>Why am I doing this to myself 🤔</h1>
@@ -301,7 +360,7 @@
         <id>https://blog.sammykins.au/posts/hello/</id>
 
         <updated>2025-01-17T11:21:56+11:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     Hello world. That's what they say right?
                 ]]>
