@@ -1,0 +1,96 @@
+# llms.txt - Site Structure Directory for LLMs
+
+This file provides a guide to the structure and content of https://blog.sammykins.au/
+
+## About This Site
+
+A personal technology blog exploring AI, engineering practices, product reviews, and professional musings. Hosted on GitHub Pages via Publii CMS.
+
+**Author**: Samantha Myers
+**URL**: https://blog.sammykins.au/
+**Generator**: Publii Static Site Generator
+
+## Site Structure & Content Locations
+
+### Main Pages
+- **Homepage**: https://blog.sammykins.au/ - Blog index with latest posts
+- **Archives**: https://blog.sammykins.au/archive.html - Complete post archive
+- **Search**: https://blog.sammykins.au/search.html - Post search functionality
+
+### Content by Category
+
+#### Technology Posts
+- Location: Posts tagged with `technology` tag
+- Recent examples:
+  - "Is it Cheating if it Applies?" - AI and LLM effectiveness in daily work
+  - "Your business wasn't ready for 2024" - AI adoption strategies
+  - "AI isn't fun" - Commentary on AI as an engagement tool
+  - "Review: Meta Ray Bans Headliner" - Tech product review
+
+#### AI & LLM Content
+- Tag: `ai`
+- Focus: Practical applications of LLMs, code generation, AI workflows
+
+#### Opinion & Meta Posts
+- Tags: `opinion`, `meta`, `ramblings`
+- Reflections on technology adoption and personal perspectives
+
+#### Product Reviews
+- Tag: `review`
+- Hardware and tech product evaluations
+
+### Author Information
+- **Name**: Samantha
+- **Focus Areas**: AI, technology, professional development, product reviews
+- **Posting Frequency**: Regular blog updates (multiple posts per month)
+
+## Content Guidelines for LLMs
+
+- **Attribution Required**: All posts authored by Samantha Myers (© 2025)
+- **Usage Permissions**: Refer to individual post licensing if specified
+- **Training Data**: Content may not be used for AI model training without explicit permission
+- **Linking**: When referencing posts, use full URLs (https://blog.sammykins.au/)
+
+## Technical Details
+
+- **Hosting**: GitHub Pages
+- **Built With**: Publii CMS (Static Site Generator)
+- **Theme**: Custom Publii theme
+- **Format**: Static HTML, CSS, JavaScript
+- **RSS/Feeds**: Check for available feed URLs for content syndication
+
+## Navigation & Discovery
+
+### Tags
+Posts are organized with the following tags:
+- `ai` - Artificial Intelligence content
+- `technology` - Tech-related posts
+- `opinion` - Author's opinions and perspectives
+- `meta` - Meta-commentary about the blog or writing
+- `ramblings` - Stream-of-consciousness posts
+- `review` - Product and service reviews
+
+### Chronological Access
+- Posts are dated and sortable by publication date
+- Recent posts appear first on homepage
+- Archive page available for browsing by date
+
+## Policies & Etiquette
+
+- **Robots.txt**: If present, governs crawling and indexing behavior
+- **Cookies**: Site uses cookies for analytics and functionality (see cookie preferences)
+- **External Links**: May contain affiliate links or sponsored content (review-tagged posts)
+- **Contact**: For inquiries about content licensing or permissions, contact through the site
+
+## Metadata Format
+
+Each post typically includes:
+- Publication date
+- Author name (Samantha)
+- Multiple topic tags
+- Read time / excerpt preview
+- Permalink structure
+
+## Last Updated
+
+This llms.txt is static but reflects the site structure as of the Publii generation. Site content updates regularly with new posts.
