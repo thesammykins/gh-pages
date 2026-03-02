@@ -3,12 +3,118 @@
     <title>Sammykins</title>
     <link href="https://blog.sammykins.au/feed.xml" rel="self" />
     <link href="https://blog.sammykins.au" />
-    <updated>2026-01-06T15:06:31+11:00</updated>
+    <updated>2026-03-02T14:11:32+11:00</updated>
     <author>
         <name>Samantha</name>
     </author>
     <id>https://blog.sammykins.au</id>
 
+    <entry>
+        <title>OpenClaw is not the answer</title>
+        <author>
+            <name>Samantha</name>
+        </author>
+        <link href="https://blog.sammykins.au/posts/openclaw-is-not-the-answer/"/>
+        <id>https://blog.sammykins.au/posts/openclaw-is-not-the-answer/</id>
+        <media:content url="https://blog.sammykins.au/media/posts/10/nano-banana-2-kn715p5hg9j7n7kbakbs25y4458246dm.png" medium="image" />
+            <category term="technology"/>
+            <category term="ramblings"/>
+            <category term="opinion"/>
+            <category term="ai"/>
+
+        <updated>2026-03-02T13:58:23+11:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://blog.sammykins.au/media/posts/10/nano-banana-2-kn715p5hg9j7n7kbakbs25y4458246dm.png" alt="" />
+                    <h1>What is OpenClaw?</h1>
+<p><a href="https://github.com/openclaw/openclaw">OpenClaw</a> wants to be your <a href="https://en.wikipedia.org/wiki/J.A.R.V.I.S.">JARVIS</a>.</p>
+<p>You run it on your own machine, plug it into your chats, email, browser and password manager, then ask it to do things a human assistant would normally do: check your inbox, book things, remember details, prod you about tasks.</p>
+<p>Under the hood it’s just an orchestration layer for LLM “agents” – one that plans, others that execute. The idea is not new. What’s new is how much OpenClaw tries to bundle into one opinionated package, and how much work it expects you to do to fit your life into its shape.</p>
+
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://blog.sammykins.au/media/posts/10/nano-banana-2-kn715p5hg9j7n7kbakbs25y4458246dm.png" class="type:primaryImage" alt="" /></p>
+                <h1>What is OpenClaw?</h1>
+<p><a href="https://github.com/openclaw/openclaw">OpenClaw</a> wants to be your <a href="https://en.wikipedia.org/wiki/J.A.R.V.I.S.">JARVIS</a>.</p>
+<p>You run it on your own machine, plug it into your chats, email, browser and password manager, then ask it to do things a human assistant would normally do: check your inbox, book things, remember details, prod you about tasks.</p>
+<p>Under the hood it’s just an orchestration layer for LLM “agents” – one that plans, others that execute. The idea is not new. What’s new is how much OpenClaw tries to bundle into one opinionated package, and how much work it expects you to do to fit your life into its shape.</p>
+
+<h1>What OpenClaw does right.</h1>
+<p>I did actually give OpenClaw a fair shot.</p>
+<p>I wired it up to my <a href="http://z.ai/">Z.AI</a> Coding Plan, using GLM‑5 and GLM‑4.6 as the brains for my “personal assistant”. The potential is there. When it’s behaving, it really does feel like a little worker living in your terminal and messaging apps.</p>
+<p>Getting there <strong>sucked</strong>.</p>
+<p>The sandboxed setup experience was bad enough that I handed the whole thing to OpenCode (my terminal agent of choice, using ‎<code>codex-5.2-high</code>) and let it read the docs and do the install for me. The official instructions are technically correct but practically unusable unless you already think like the people who built it, it's also probably been written by an LLM lacking full context.</p>
+<p>Once everything finally booted, the onboarding flow was… fine. I gave it a name, tone and personality, we verified it could reach its own Google account and 1Password, and I kept my actual personal credentials out of reach. With access to its own config it could at least patch itself, and by the end of day one I was optimistic: a few rough edges, but promising.</p>
+<hr>
+<h1>Why isn’t OpenClaw the answer?</h1>
+<figure class="post__image post__image--center"><img loading="lazy" src="https://blog.sammykins.au/media/posts/10/nano-banana-2-kn72andmr0ksntbxg1a0tdnw55824vq1.png" alt="" width="895" height="500" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://blog.sammykins.au/media/posts/10/responsive/nano-banana-2-kn72andmr0ksntbxg1a0tdnw55824vq1-xs.png 300w ,https://blog.sammykins.au/media/posts/10/responsive/nano-banana-2-kn72andmr0ksntbxg1a0tdnw55824vq1-sm.png 480w ,https://blog.sammykins.au/media/posts/10/responsive/nano-banana-2-kn72andmr0ksntbxg1a0tdnw55824vq1-md.png 768w ,https://blog.sammykins.au/media/posts/10/responsive/nano-banana-2-kn72andmr0ksntbxg1a0tdnw55824vq1-lg.png 1024w">
+<figcaption>Credit: Nano Banana Pro 2</figcaption>
+</figure>
+<hr>
+<p>Day two is where it <strong>all fell apart</strong>.</p>
+<p>OpenClaw suddenly forgot how to talk to 1Password, threw a tantrum, and left me babysitting it. That’s when it really clicked: this thing isn’t built for me. It’s built for the people who designed it, plus a small crowd of power users who are happy to burn through ChatGPT, Claude or raw API tokens keeping their “AI employee” upright.</p>
+<p>The whole environment is extremely opinionated. You aren’t slotting an assistant into your life; you’re contorting your life around someone else’s idea of how an assistant should work. Unless you share that mental model and have time to debug their stack, you’re just volunteering as unpaid SRE.</p>
+<p>Tools like this almost never end up being “the answer”. They’re reference designs. They exist to give you ideas and patterns you can strip for parts when you build your own thing. Everyone says they want a JARVIS in their house. Almost nobody actually wants to understand what it takes to build and run one.</p>
+<hr>
+<h1>The Herd.</h1>
+<p>Right now there’s a full‑blown OpenClaw cargo cult.</p>
+<p>People are panic‑buying Mac minis, spinning up random VPSes, and turning old hardware into “AI hubs” for a system they fundamentally do not understand. It’s like watching everyone rush to install Kubernetes at home because they saw a cool Grafana screenshot.</p>
+<p>I don’t want fewer people playing with this stuff. I want more people who actually understand what they’re running. My ideal world is one where “OpenClaw” is not a binary you worship, but a pattern you can re‑create in a way that fits your skills, your risk tolerance, and your actual life.</p>
+<p>We are sprinting towards a personal‑AGI fantasy while skipping the boring bit: learning how any of this works. These tools are not ready for the average user. They barely tolerate someone like me, and I’ve lived my whole career inside IT support queues and admin consoles.</p>
+<p>I’m not a software engineer. I’ve spent my career on the frontline: end‑user support, IdP and MDM admin, the unglamorous glue that keeps everyone else’s tools working. Before LLMs, my “coding” was stitching together scripts from StackOverflow and old forum posts until they did what I needed.</p>
+<p>The only reason I can wrangle something like OpenClaw at all is because I’ve already lived in terminals, logs and dashboards for years.</p>
+<p>That’s the quiet revolution nobody talks about: we now live in a world where someone like me can, with the right understanding and some stubbornness, build a fully automated personal assistant that learns, remembers and scales with my needs.</p>
+<p>The leverage isn’t in the stack. It’s in the <strong>instructions</strong>.</p>
+<hr>
+<h1>Instruction is the missing link</h1>
+<figure class="post__image post__image--center"><img loading="lazy" src="https://blog.sammykins.au/media/posts/10/nano-banana-2-kn76khn67s4bkcjvsmfxyz4aa582586t-2.png" alt="" width="895" height="500" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://blog.sammykins.au/media/posts/10/responsive/nano-banana-2-kn76khn67s4bkcjvsmfxyz4aa582586t-2-xs.png 300w ,https://blog.sammykins.au/media/posts/10/responsive/nano-banana-2-kn76khn67s4bkcjvsmfxyz4aa582586t-2-sm.png 480w ,https://blog.sammykins.au/media/posts/10/responsive/nano-banana-2-kn76khn67s4bkcjvsmfxyz4aa582586t-2-md.png 768w ,https://blog.sammykins.au/media/posts/10/responsive/nano-banana-2-kn76khn67s4bkcjvsmfxyz4aa582586t-2-lg.png 1024w">
+<figcaption>Credit: Nano Banana Pro 2</figcaption>
+</figure>
+<hr>
+<p>This is the bit that grinds my gears.</p>
+<p>Most people are still treating frontier LLMs like a slightly weirder Google. Ask a question, get an answer, move on. That’s not what these models are good at.</p>
+<p>What they’re actually good at is reasoning inside constraints. You give them a role, a set of tools, a bit of state, and a clear job to do. They make assumptions, run little internal plans and then act.</p>
+<p>If I say:</p>
+<p><code>“write me a small todo app, use Todoist as your inspiration, make it compatible with macOS”</code></p>
+<p>and feed that to the same model twice, I’ll get basically the same toy app both times. Same vague prompt, same vague output.</p>
+<p>The moment I add a web search tool, or extra context, or more detailed instructions, the space of possible outputs explodes. That randomness can be powerful if you know how to steer it. If you don’t, it just feels like chaos.</p>
+<p>That’s the actual “prompt engineering trick”: not worshipping some 5,000‑token master prompt, but treating the model like a junior who will happily repeat the same mistakes forever if you don’t change how you brief them.</p>
+<p>We’re also <a href="https://arxiv.org/abs/2602.11988">starting to see the limits</a> of the <code>AGENTS.md</code> trend in codebases.</p>
+<p>The idea was cute: one big markdown file that tells your agents who they are and how to behave. In practice, a lot of teams are discovering it just adds noise and confusion. The model half‑reads it, misapplies it, or ignores it whenever the rest of the context disagrees.</p>
+<p>What seems to work better is splitting things out:</p>
+<ul>
+<li><code>SKILLS.md</code> in a named folder, with references that describes specific capabilities and when to use them.</li>
+<li><code>SOUL.md</code> for personality and tone.</li>
+<li><code>USER.md</code> / <code>MEMORY.md</code> for who you are and what actually matters long‑term.</li>
+</ul>
+<p>In other words, fewer monolithic manifestos, more small, explicit instruction blocks that the model can pick up and drop as needed. That’s where our personal agents get interesting.</p>
+<p>If you’re in a giant monolithic codebase then the <a href="http://AGENTS.md"><code>AGENTS.md</code></a> is where you should be dumping anti-patterns of learnings by agents in your codebase, not things you assume it will cock up.</p>
+<p>MCP, as a lifestyle, <strong>is dead to me</strong>.</p>
+<p>If you enjoy wiring JSON schemas to JSON schemas so your model can ask permission to call another JSON schema, knock yourself out. For personal agents and workflows, it’s the wrong level of abstraction.</p>
+<p>Just build CLI tools.</p>
+<p>Seriously. Wrap the thing you care about in a tiny, well‑named command your agent can call from a shell. Half the “MCP servers” people are writing today would be better as one <code>todo-sync</code> script and a man page.</p>
+<p>Steal ideas from MCP if you like. Use the server repos as inspiration. But for your own life, build small commands first. Let the agent orchestrate them. That’s where this actually starts to feel usable.</p>
+<p>Good engineers will benefit from the IDE and desktop experience for years to come, but for any personal agents or workflows the terminal and hands-off experiences will win here. You are one good messaging platform choice away from speaking to an LLM who can and will understand everything about you with relative ease.</p>
+<hr>
+<h1>Where to from here then?</h1>
+<figure class="post__image post__image--center"><img loading="lazy" src="https://blog.sammykins.au/media/posts/10/nano-banana-2-kn748vs39jn4g7kmp25hpjxge9825hjd-2.png" alt="" width="896" height="500" sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://blog.sammykins.au/media/posts/10/responsive/nano-banana-2-kn748vs39jn4g7kmp25hpjxge9825hjd-2-xs.png 300w ,https://blog.sammykins.au/media/posts/10/responsive/nano-banana-2-kn748vs39jn4g7kmp25hpjxge9825hjd-2-sm.png 480w ,https://blog.sammykins.au/media/posts/10/responsive/nano-banana-2-kn748vs39jn4g7kmp25hpjxge9825hjd-2-md.png 768w ,https://blog.sammykins.au/media/posts/10/responsive/nano-banana-2-kn748vs39jn4g7kmp25hpjxge9825hjd-2-lg.png 1024w">
+<figcaption>Credit: Nano Banana Pro 2</figcaption>
+</figure>
+<hr>
+<p>I’ve always said that for people to understand LLMs they need to get in the trenches and use them. A lot of experiences being shown to people are crappy little questions or image generation in workplace tools like Gemini for Workspace or Copilot for Business, these are frankly in my opinion, not real tools to do real work. They are a stop-gap solution to a problem of compute capacity to be an individuals personal worker, imagine the cost of compute if every human being did have their own 24/7 personal assistant for their tasks? There’s a reason the current capacity has yet to really hit a limit and it’s because there is such a small percentage of people in the world using it to it’s potential as the models get smarter and more capable.</p>
+<p>You might know it by its old name, Clawdbot.</p>
+<p>The short version: OpenClaw is a “personal AI employee” you host yourself. It lives on your own hardware, sits inside the apps you already use (Telegram, WhatsApp, Discord, iMessage etc), and then quietly runs your life in the background – reading, deciding, acting.</p>
+<p>The sales pitch is simple: instead of hiring an assistant who lives inside your inbox and calendar, you wire up a swarm of AI agents and a boss agent to coordinate them. In theory, it learns your world and just gets stuff done for you.</p>
+<p>In practice, what OpenClaw ships today is a very opinionated, quite bloated way of doing something conceptually simple: a planner that hands off to workers.</p>
+<p>What you should be looking for is tools like <a href="https://cursor.com/">Cursor</a>, <a href="https://github.com/copilot">Github Copilot</a>, <a href="https://opencode.ai/">OpenCode</a>, <a href="https://ampcode.com/">AMP Code</a> and similar projects that are pushing the frontier of LLM usage on your screen. Don’t keep using things like Gemini when you have <a href="https://geminicli.com/">Gemini CLI</a>/<a href="https://antigravity.google/">Antigravity</a>, Don’t keep using Copilot for Business when you have Github Copilot or the-like.</p>
+<p>I’m going to continue to harp on in future about how the inability to get good results from LLMs and especially the frontier models is not the providers or the model itself but the inability for those being given access to them to understand how to effectively use them and grow a new skill. If you are wondering why your results suck, the problem might honestly be you.</p>
+<p>Do something interesting, maybe just start with making yourself that personal assistant with access to read your calendar and access to a todo list and start from there? Get it messaging you on Discord or another messaging platform. If you don’t start now you’ll be left behind in a few short months.</p>
+<p><!-- notionvc: 470372b1-8b58-4457-b2c6-ef9c5fd2c380 --></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Things have shifted.</title>
         <author>
