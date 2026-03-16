@@ -11,6 +11,25 @@
     },
     "items": [
         {
+            "id": "https://blog.sammykins.au/posts/mcp-is-dead-for-consumers/",
+            "url": "https://blog.sammykins.au/posts/mcp-is-dead-for-consumers/",
+            "title": "MCP is dead (for consumers)",
+            "summary": "<blockquote>\n<p>This is a bit of a shorter opinion piece from me, just because it didn't deserve a deep-dive, I reckon if you're in the AI/Agent-space at the moment you'll have come to this realisation a while ago with me.</p>\n</blockquote>\n<h1>Why is MCP dead?</h1>\n<p>Getting straight to the point, MCP is token-heavy, exposes information an LLM might not actually need and is wasteful of the current context windows our agents/LLMs are limited to.</p>\n",
+            "content_html": "<blockquote>\n<p>This is a bit of a shorter opinion piece from me, just because it didn't deserve a deep-dive, I reckon if you're in the AI/Agent-space at the moment you'll have come to this realisation a while ago with me.</p>\n</blockquote>\n<h1>Why is MCP dead?</h1>\n<p>Getting straight to the point, MCP is token-heavy, exposes information an LLM might not actually need and is wasteful of the current context windows our agents/LLMs are limited to.</p>\n\n<p>We’re now a few years deep in the experiment and I’m no longer convinced that MCP is the bridge to services and tools we once thought it would be, if we’re being honest the moment it was donated to become a baseline part of the Agent ecosystem is was doomed to failure.</p>\n<p>The irony is, most of the models we’re using daily (if you can keep up) are <strong>very</strong> good at looking for <code>--help</code> or <code>cli help</code> commands in order to gather context about how to use the tool. They don’t need a 20,000 token MCP tool telling them how to interact with an entire service.</p>\n<p>Perhaps a tool like the <a href=\"https://github.com/googleworkspace/cli\">Google Workspace CLI</a> is the awakening you need to tell you MCP is dead, even if it’s not some fancy official tool, it’s still made by Googlers and is the missing thing your agents (at least personally) have been missing.</p>\n<h1>Does MCP still have a place?</h1>\n<p>Absolutely, keep building MCP servers for <strong>internal use cases</strong>, there is zero value wiring up your models personally to an MCP anymore when a service has proper APIs you can wire into a cli client. If you’re doing repeatable tasks you’re already exposing directly to an API via tool calls anyway, why not just bake everything into a single, comprehensive cli tool as well while you’re at it?</p>\n<p>I think where MCP can be useful is in context gathering cases e.g. wired to knowledge tools, large memory context systems. Where it isn’t useful is hooking into your Linear or Notion environments and winging it (though at least Linear’s MCP server is actually useful..)</p>\n<p>I’ve played with a multitude of MCP servers and now only keep two active, <a href=\"https://context7.com/\">context7</a> and <a href=\"https://github.com/galprz/grep-mcp\">grep_mcp</a>. Context7 now has a CLI tool I’ll migrate over to when some current projects are wrapped up and I adjust my root <a href=\"http://AGENTS.md\"><code>AGENTS.md</code></a> to start using it. Tools for fetching sites or repos are a dime-a-dozen and frankly native tools inside of all the agent systems we now use are getting better by the hour.</p>\n<p>I think MCP as a concept was great, but it’s being abandoned en-masse by anyone who originally built them because CLI is arguably (heh) better at being usable by agents/LLMs at scale in comparison. Hell, I’ve built MCP servers for a few use cases and I’d rather rebuild them from scratch as CLI tools now if I had a reason to.</p>\n<h1>What does it even matter?</h1>\n<p>It doesn’t, I expect like everything we’ll see a replacement in a few hours for anything and everything as the models improve, or perhaps we move past using transformer models and finally delve into another frontier of what’s possible? Frankly none of us know unless you’re inside a frontier lab using internal versions of what we, the public, get to use daily.</p>\n<p>I love my current tools and how they work, I’m not an engineer so my tools are what help me sloperate my best, but for what it’s worth MCP is dead to me. Go make a CLI for your service, you've got the API calls being wasted there.</p>\n<p><!-- notionvc: 812dc36a-a92f-456a-ab59-002a2cedcd2a --></p>",
+            "image": "https://blog.sammykins.au/media/posts/11/gpt-image-1.5-kn736phs6vbg2b9b20tmvkfc3s83004a.png",
+            "author": {
+                "name": "Samantha"
+            },
+            "tags": [
+                   "technology",
+                   "ramblings",
+                   "opinion",
+                   "ai"
+            ],
+            "date_published": "2026-03-16T13:58:55+11:00",
+            "date_modified": "2026-03-16T14:05:38+11:00"
+        },
+        {
             "id": "https://blog.sammykins.au/posts/openclaw-is-not-the-answer/",
             "url": "https://blog.sammykins.au/posts/openclaw-is-not-the-answer/",
             "title": "OpenClaw is not the answer",
